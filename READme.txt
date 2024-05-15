@@ -12,32 +12,33 @@ The code is designed to interact with a SQLite database to manage customer infor
 FUNCTIONALITY
 
 The application connects to an SQLite database (customer_db.db) and interacts with it through a cursor object. It ensures the database structure is set up by creating a "customers" table if it doesn't exist, with fields for id, first_name, last_name, and email.
-
+--------------------------------------------------------------------------------------------------------------------------
 CORE FEATURES
 
--INSERT A NEW CUSTOMER:
+👉INSERT A NEW CUSTOMER:
  The system allows you to add a new customer by providing their first name, last name, and email. The application includes basic validation to ensure that the data is in the correct format.
 
--DISPLAY ALL CUISTOMERS:
+👉DISPLAY ALL CUISTOMERS:
  This feature retrieves all customer records from the database and displays them in a formatted manner. If no customers are found, the system will notify you accordingly.
 
--UPDATE CUSTOMER INFORMATION:
+👉UPDATE CUSTOMER INFORMATION:
  You can update a specific customer's information by selecting which field to update (first_name, last_name, or email) and providing a new value. The system ensures that you choose a valid field to update.
 
--DELETE A CUSTOMER:
+👉DELETE A CUSTOMER:
  This feature allows you to delete a customer by ID. The system asks for confirmation to prevent accidental deletions.
 
--DROP THE COMPLETE TABLE:
+👉DROP THE COMPLETE TABLE:
  For extreme cases, the system provides an option to drop (delete) the entire "customers" table. It requires confirmation before proceeding, to avoid accidental data loss.
 
--EXIT THE APPLICATION:
+👉EXIT THE APPLICATION:
  The system includes a clean exit option, ensuring proper closure of the SQLite database connection.
 
--USER INTERACTION AND ERROR HANDILING:
+👉USER INTERACTION AND ERROR HANDILING:
 The application operates through a loop-based menu, allowing users to select from various options. It handles invalid inputs and database errors gracefully, providing clear error messages and allowing users to correct their mistakes.
 
 If you need to change or add information to this system, ensure that the SQLite connection is properly established and closed, to avoid data corruption or memory leaks.
-
+--------------------------------------------------------------------------------------------------------------------
 CONCLUDING REMARKS
 
 This Customer Information Management System is a simple yet effective solution for managing customer records with SQLite and Python. It is designed for small to medium-sized applications where a full-fledged database server may be unnecessary. The straightforward menu-driven approach and robust error handling make it accessible to a wide range of users.
+-------------------------------------------------------------------------------------------------------------------
